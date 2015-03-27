@@ -5,8 +5,8 @@ from fiona import collection
 
 schema = { 'geometry': 'Point', 'properties': { 'name': 'str' } }
 with collection(
-    argv[1]+".csv", "w", "ESRI Shapefile", schema) as output:
-    with open(argv[1]+".shp", 'rb') as f:
+    argv[2], "w", "ESRI Shapefile", schema) as output:
+    with open(argv[1], 'rb') as f:
         reader = csv.DictReader(f)
         for row in reader:
             point = Point(float(row['lon']), float(row['lat']))

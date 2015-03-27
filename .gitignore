@@ -7,3 +7,7 @@
 *.osm
 *.o5m
 osmose-planet-latest.csv
+*.cpg
+*.dbf
+*.shp
+*.shx

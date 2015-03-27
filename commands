@@ -1,0 +1,9 @@
+
+https://source.opennews.org/en-US/articles/eleven-awesome-things-you-can-do-csvkit/
+head -n 1 osmose-planet-latest.csv
+csvsql --query "select m.analyser , count(m.analyser) from osmose-planet-latest as m group by m.analyser" osmose-planet-latest.csv analyser.csv
+
+
+csvsql --query "select m.usda_id, avg(i.sepal_length) as mean_sepal_length from iris as i join irismeta as m on (i.species = m.species) group by m.species" examples/iris.csv examples/irismeta.csv
+
+csvgrep -c analyser -r "sax" osmose-planet-latest.csv  > sax.csv

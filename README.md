@@ -1,4 +1,4 @@
-# ferror-osmose
+# filter-osmose
 Proces data from : http://osmose.openstreetmap.fr/export/
 
 

@@ -4,7 +4,7 @@ Proces data from : http://osmose.openstreetmap.fr/export/
 
 #### Setup the file analyser
 Filter per field: **analyser**
-You have to setup the interesting category on file `analyser`
+Copy `analyser.sample` and paster and then rename to `analyser` you have to  select the category that you interesting.
 
 in this case
 ```
